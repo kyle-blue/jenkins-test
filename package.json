@@ -1,0 +1,40 @@
+{
+  "name": "jenkins-2.0",
+  "version": "1.0.0",
+  "description": "Test Repo for Jenkins Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test-watch": "jest --watch --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/bigboiblue/jenkins-2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/bigboiblue/jenkins-2.0/issues"
+  },
+  "homepage": "https://gitlab.com/bigboiblue/jenkins-2.0#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^12.12.24",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "gulp": "^4.0.2",
+    "jest": "^24.9.0",
+    "node-sass": "^4.13.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
+  }
+}
