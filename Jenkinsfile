@@ -26,7 +26,10 @@ node {
 
     stage("Done") {
         echo "\n\n\n"
-        sh "ls -la repo"
+        sh "cd repo"
+        sh "ls -la"
+        sh "cd repo"
+        sh "ls -la"
         sh "rm -R repo"
         gitStatusUpdate("success", "Done n stuff")
     }
