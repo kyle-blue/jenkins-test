@@ -18,6 +18,7 @@ node {
             "https://api.github.com/repos/bigboiblue/jenkins-test/statuses/${GIT_AFTER_HASH}"
         """
 
-        sh "ls"
+        sh "ls -la"
+        sh "pwd"
     }
 }
