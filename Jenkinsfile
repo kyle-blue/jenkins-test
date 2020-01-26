@@ -26,7 +26,7 @@ node {
 
     stage("Done") {
         echo "\n\n\n"
-        dir("repo") {
+        dir("repo/repo") {
             sh "ls -la"
         }
         sh "rm -R repo"
