@@ -24,12 +24,15 @@ node {
         }
     }
 
-    stage("Done") {
-        echo "\n\n\n"
+    stage("Final Report") {
         dir("repo") {
             sh "ls -la"
         }
+        
+        gitStatusUpdate("success", "Unit / integrations tests, and static code analysis passed")
+    }
+
+    stage("Cleanup") {
         sh "rm -R repo && rm -R repo@tmp"
-        gitStatusUpdate("success", "Done n stuff")
     }
 }
