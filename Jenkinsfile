@@ -23,10 +23,12 @@ node {
             checkout scm
         }
     }
+    //TODO: Add docker step and run unit tests
 
     stage("Final Report") {
         dir("repo") {
             sh "ls -la"
+            sh "docker --version"
         }
         
         gitStatusUpdate("success", "Unit / integrations tests, and static code analysis passed")
