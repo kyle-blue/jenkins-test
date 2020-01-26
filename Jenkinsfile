@@ -8,7 +8,7 @@ node {
             curl \\
                 -X POST \\
                 -H "Content-Type: application/json" \\
-                -H "Authorization token 2ddc57ed078bbf06851e6b5da4ce8861d0383304" \\
+                -H "Authorization: token ebf828c4a3152c8264537e254756fb9d2e349984" \\
                 -d '{
                     "state": "success",
                     "target_url": "${BUILD_URL}console",
