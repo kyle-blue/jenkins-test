@@ -29,7 +29,7 @@ node {
         dir("repo") {
             sh "ls -la"
         }
-        sh "rm -R repo"
+        sh "rm -R repo && rm -R repo@tmp"
         gitStatusUpdate("success", "Done n stuff")
     }
 }
