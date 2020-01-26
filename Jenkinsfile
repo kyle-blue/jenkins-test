@@ -1,5 +1,5 @@
 node {
-    stage("Start") {
+    stage("Initialisation") {
         echo GIT_BEFORE_HASH
         echo GIT_AFTER_HASH
         echo "You WOOTOTOddOT"
@@ -17,5 +17,7 @@ node {
                 }' \\
             "https://api.github.com/repos/bigboiblue/jenkins-test/statuses/${GIT_AFTER_HASH}"
         """
+
+        sh "ls"
     }
 }
