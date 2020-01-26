@@ -2,7 +2,7 @@ node {
     stage("Start") {
         echo GIT_BEFORE_HASH
         echo GIT_AFTER_HASH
-        echo "You WOOTOTOdOT"
+        echo "You WOOTOTOddOT"
         
         sh """
             curl
