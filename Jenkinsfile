@@ -18,11 +18,16 @@ def gitStatusUpdate(state, description) {
 node {
     stage("Initialisation") {        
         gitStatusUpdate("pending", "Initialising Jenkins Workspace")
+
+        dir('repo') {
+            checkout scm
+        }
     }
 
     stage("Done") {
         echo "\n\n\n"
-        sh "ls -la"   
+        sh "ls -la"
+        sh "rm -R repo"
         gitStatusUpdate("success", "Done n stuff")
     }
 }
