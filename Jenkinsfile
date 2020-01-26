@@ -15,7 +15,7 @@ node {
                     "description": "The build succeeded!",
                     "context": "continuous-integration/jenkins"
                 }' \\
-            "https://api.GitHub.com/repos/bigboiblue/jenkins-test/statuses/$GIT_AFTER_HASH"
+            "https://api.github.com/repos/bigboiblue/jenkins-test/commits/${GIT_AFTER_HASH}/statuses"
         """
     }
 }
